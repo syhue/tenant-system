@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-center align-items-center w-100 h-100">
+  <div class="login-container">
+    <div [formGroup]="formGroup">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Username</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" formControlName="username">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleFormControlTextarea1" formControlName="password">
+      </div>
+    </div>
+
+    <button class="btn btn-primary" (click)="submit()">Login</button>
+  </div>
+</div>
