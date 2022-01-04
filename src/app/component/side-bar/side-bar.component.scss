@@ -1,0 +1,50 @@
+.side-bar {
+  background-color: antiquewhite;
+  width: 25%;
+  position: fixed;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .menu-bar,
+  .sub-menu-bar {
+    margin-top: 3rem;
+    color: black;
+    font-weight: 500;
+    width: 10rem;
+  }
+
+  .sub-menu-bar {
+    margin-top: 0;
+  }
+
+  .menu,
+  .sub-menu {
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    cursor: pointer;
+  }
+
+  .active {
+    color: whitesmoke;
+    background-color: palevioletred;
+  }
+
+  .sub-menu {
+    color: black;
+    background-color: lightblue;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+  }
+
+  .sub-menu:hover {
+    background-color: cadetblue;
+    color: white;
+  }
+}

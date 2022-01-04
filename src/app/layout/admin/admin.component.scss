@@ -1,0 +1,16 @@
+.admin-wrapper {
+  min-height: 100vh;
+  position: relative;
+
+  .content {
+    background-color: #c4243308;
+    border: dashed 2px darkred;
+    margin-left: calc(25% + 2rem);
+    margin-right: 2rem;
+    min-height: 80%;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    width: calc(100% - 25% - 4rem);
+  }
+}

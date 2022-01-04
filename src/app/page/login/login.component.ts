@@ -32,8 +32,8 @@ export class LoginComponent implements OnInit {
 
     this.authService.login(this.formGroup.value).subscribe(
       result => {
-        if (result) {
-          this.router.navigate(['home'])
+        if (result.result) {
+          this.router.navigate(['home']);
         }
         else {
           alert('Wrong credential!')
