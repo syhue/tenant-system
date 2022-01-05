@@ -6,8 +6,8 @@ import { HomeComponent } from 'src/app/page/home/home.component';
 import { ProfileComponent } from 'src/app/page/profile/profile.component';
 import { UtilityComponent } from 'src/app/page/utility/utility.component';
 
-const routes: Routes = [
-  { path: '', redirectTo: 'profile/:id', pathMatch: 'full' },
+export const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'profile/:id', component: ProfileComponent },
   { path: 'agreement/:id', component: AgreementComponent },

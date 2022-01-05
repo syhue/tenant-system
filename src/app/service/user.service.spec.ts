@@ -1,16 +1,16 @@
-import { TestBed } from '@angular/core/testing';
-
 import { UserService } from './user.service';
 
 describe('UserService', () => {
-  let service: UserService;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(UserService);
+  it('get correct tenant detail by id', () => {
+    expect(new UserService().getTenantDetails(1).id).toBe(1);
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  it('get correct tenant detail by id', () => {
+    expect(new UserService().getTenantDetails(12).id).toBe(12);
+  });
+
+  it('get nothing by non existing id', () => {
+    expect(new UserService().getTenantDetails(100)).toBeUndefined();
   });
 });

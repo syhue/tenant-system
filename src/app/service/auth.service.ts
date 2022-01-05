@@ -51,14 +51,6 @@ export class AuthService {
       }
     );
   }
-
-  getUserDetails() {
-    if (this.savedUser) {
-      return;
-    }
-
-    // call api
-  }
 }
 
 export interface userData {

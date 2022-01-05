@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ClaimsComponent } from './claims.component';
 
 describe('ClaimsComponent', () => {
@@ -17,9 +16,5 @@ describe('ClaimsComponent', () => {
     fixture = TestBed.createComponent(ClaimsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
   });
 });

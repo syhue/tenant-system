@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { LoginComponent } from './login.component';
 
@@ -8,6 +9,7 @@ describe('LoginComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [FormsModule, ReactiveFormsModule],
       declarations: [ LoginComponent ]
     })
     .compileComponents();
@@ -15,11 +17,13 @@ describe('LoginComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(LoginComponent);
-    component = fixture.componentInstance;
     fixture.detectChanges();
+    component = fixture.debugElement.componentInstance;
+    component.ngOnInit();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  // *FAILED
+  it('form invalid when empty', () => {
+    expect(component.formGroup.invalid).toBeTruthy();
   });
 });

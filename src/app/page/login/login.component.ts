@@ -13,7 +13,6 @@ export class LoginComponent implements OnInit {
   formGroup!: FormGroup;
 
   constructor(
-    private route: ActivatedRoute,
     private router: Router,
     private authService: AuthService,
     private formBuilder: FormBuilder,
@@ -24,9 +23,8 @@ export class LoginComponent implements OnInit {
   }
 
   submit() {
-
     if (this.formGroup.invalid) {
-      alert('Please fill in the username and password!');
+      alert('Please fill in the correct username and password!');
       return;
     }
 

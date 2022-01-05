@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AuthComponent } from './auth.component';
 
 describe('AuthComponent', () => {
@@ -17,9 +16,5 @@ describe('AuthComponent', () => {
     fixture = TestBed.createComponent(AuthComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
   });
 });

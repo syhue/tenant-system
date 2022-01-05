@@ -3,8 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from 'src/app/layout/admin/admin.component';
 import { AuthComponent } from 'src/app/layout/auth/auth.component';
 
-const routes: Routes = [
-  // { path: '', redirectTo: 'login', pathMatch: 'full' },
+export const routes: Routes = [
   {
     path: '',
     component: AuthComponent,
