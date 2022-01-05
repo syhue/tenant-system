@@ -7,12 +7,12 @@ import { ProfileComponent } from 'src/app/page/profile/profile.component';
 import { UtilityComponent } from 'src/app/page/utility/utility.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'profile/:id', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'profile', component: ProfileComponent },
-  { path: 'agreement', component: AgreementComponent },
-  { path: 'utility', component: UtilityComponent },
-  { path: 'claims', component: ClaimsComponent },
+  { path: 'profile/:id', component: ProfileComponent },
+  { path: 'agreement/:id', component: AgreementComponent },
+  { path: 'utility/:id', component: UtilityComponent },
+  { path: 'claims/:id', component: ClaimsComponent },
 ];
 
 @NgModule({

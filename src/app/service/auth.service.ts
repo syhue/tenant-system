@@ -34,7 +34,7 @@ export class AuthService {
         }
       );
     }
-    else if (formValue.username === 'user1' && formValue.password === 'password2') {
+    else if (formValue.username === 'user2' && formValue.password === 'password2') {
       const data = this.userList.find(d => d.username === 'user2');
       this.savedUser = <userData>data;
       return of(
@@ -58,7 +58,6 @@ export class AuthService {
     }
 
     // call api
-    // this.savedUser =
   }
 }
 

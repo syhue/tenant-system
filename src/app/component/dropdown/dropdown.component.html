@@ -1,6 +1,6 @@
 <select class="form-select" [(ngModel)]="value" (change)="update($event)">
-  <option *ngIf="placeholder" selected value="null" >{{placeholder}}</option>
+  <option *ngIf="placeholder" selected value="undefined">{{placeholder}}</option>
   <ng-container *ngFor="let option of options">
-      <option [value]="option.id">{{option.name}}</option>
+    <option [value]="option.id">{{option.name}}</option>
   </ng-container>
 </select>

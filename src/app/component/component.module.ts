@@ -1,14 +1,17 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
-import { SideBarComponent } from './side-bar/side-bar.component';
-import { DropdownComponent } from './dropdown/dropdown.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RouterLink, RouterModule } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
+    DropdownComponent,
     SideBarComponent,
-    DropdownComponent
+    TopBarComponent,
   ],
   imports: [
     CommonModule,
@@ -18,6 +21,7 @@ import { RouterLink, RouterModule } from '@angular/router';
   ],
   exports: [
     SideBarComponent,
+    TopBarComponent,
   ],
 })
 export class ComponentModule { }

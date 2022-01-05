@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+.wrapper {
+  padding: 2%;
+  text-align: start;
+
+  .bottom-wrapper {
+    background-color: #c4243308;
+    border: dashed 2px darkred;
+    height: 85%;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    width: 96%;
+  }
+}

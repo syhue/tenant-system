@@ -1,6 +1,8 @@
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { DropdownSelection } from 'src/app/component/dropdown/dropdown.component';
+
 import { AuthService } from 'src/app/service/auth.service';
+import { DropdownSelection } from 'src/app/component/dropdown/dropdown.component';
 
 @Component({
   selector: 'app-side-bar',
@@ -44,6 +46,8 @@ export class SideBarComponent implements OnInit {
 
   constructor(
     private authService: AuthService,
+    private route: ActivatedRoute,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -59,4 +63,7 @@ export class SideBarComponent implements OnInit {
     })
   }
 
+  routeTo() {
+    this.router.navigate(['profile', this.selectedTenant]);
+  }
 }
