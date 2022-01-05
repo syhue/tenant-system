@@ -1,11 +1,9 @@
 <div class="side-bar">
-  <app-dropdown [options]="options" placeholder="Select your tenant" [(ngModel)]="selectedTenant"
-    (valueChange)="routeTo()"></app-dropdown>
+  <app-dropdown [options]="options" placeholder="Select your tenant" [(ngModel)]="selectedTenant" (valueChange)="routeTo()"></app-dropdown>
 
   <div class="menu-bar">
     <ng-container *ngFor="let menu of menuList">
-      <div class="menu" [routerLink]="[menu.route, selectedTenant]" routerLinkActive="active"
-        class.active="routerLinkActive">{{ menu.name }}</div>
+      <div class="menu" [routerLink]="[menu.route, selectedTenant]" routerLinkActive="active" class.active="routerLinkActive">{{ menu.name }}</div>
       <div class="sub-menu-bar" *ngIf="selectedTenant%2==0">
         <div class="sub-menu">Utility</div>
         <div class="sub-menu">Claims</div>

@@ -52,6 +52,7 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit(): void {
     this.getTenantList();
+    this.selectedTenant = this.options[0].id;
   }
 
   getTenantList() {
